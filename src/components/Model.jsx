@@ -1,198 +1,115 @@
 import { useGLTF } from "@react-three/drei";
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF("/gltf/scene.gltf");
+  const { nodes, materials } = useGLTF('/gltf/scene.gltf')
   return (
-    <group {...props} dispose={null} scale={1.2}>
-      <group
-        position={[-0.02, -0.01, 0.06]}
-        rotation={[-Math.PI / 2, 0, 0]}
-        scale={0.58}
-      >
-        <group position={[0, 0, 0.01]}>
-          <mesh
-            geometry={nodes.windshield_0.geometry}
-            material={materials.window}
-          />
-          <mesh
-            geometry={nodes.windshield_1.geometry}
-            material={materials.plastic}
-          />
-        </group>
-        <group position={[0, 0, 0.03]}>
-          <mesh
-            geometry={nodes.Cylinder000_0.geometry}
-            material={materials.silver}
-          />
-          <mesh
-            geometry={nodes.Cylinder000_1.geometry}
-            material={materials.plastic}
-          />
-          <mesh
-            geometry={nodes.Cylinder000_2.geometry}
-            material={materials.rubber}
-          />
-          <mesh
-            geometry={nodes.Cylinder000_3.geometry}
-            material={materials["Material.001"]}
-          />
-        </group>
-        <group position={[0, 0, 0.03]}>
-          <mesh
-            geometry={nodes.Cylinder001_0.geometry}
-            material={materials.silver}
-          />
-          <mesh
-            geometry={nodes.Cylinder001_1.geometry}
-            material={materials.plastic}
-          />
-          <mesh
-            geometry={nodes.Cylinder001_2.geometry}
-            material={materials.rubber}
-          />
-          <mesh
-            geometry={nodes.Cylinder001_3.geometry}
-            material={materials["Material.001"]}
-          />
-        </group>
-        <mesh
-          geometry={nodes.window_rear_0.geometry}
-          material={materials.window}
-        />
-        <mesh
-          geometry={nodes.Plane002_0.geometry}
-          material={materials.paint}
-          position={[-1.05, 3.51, -0.13]}
-          rotation={[-1.44, -0.62, 0.78]}
-          scale={0.02}
-        />
-        <mesh
-          geometry={nodes.Plane003_0.geometry}
-          material={materials.paint}
-          position={[0.44, 3.72, -0.12]}
-          rotation={[-1.48, 0.1, 0.8]}
-          scale={0.02}
-        />
-        <mesh
-          geometry={nodes.Plane004_0.geometry}
-          material={materials.paint}
-          position={[-0.49, 3.68, -0.33]}
-          rotation={[-1.42, -0.04, 0.8]}
-          scale={0.06}
-        />
-        <mesh
-          geometry={nodes.boot_0.geometry}
-          material={materials.full_black}
-        />
-        <mesh
-          geometry={nodes.underbody_0.geometry}
-          material={materials.full_black}
-        />
-        <mesh
-          geometry={nodes.Plane_0.geometry}
-          material={materials.Material}
-          position={[0, 0, -1.05]}
-          scale={[6.95, 9.79, 7.5]}
-        />
-        <mesh
-          geometry={nodes.Cube001_0.geometry}
-          material={materials.plastic}
-          position={[0.04, -1.56, 0.33]}
-          rotation={[0.71, -0.07, -0.24]}
-          scale={0.01}
-        />
-        <mesh
-          geometry={nodes.bumper_front004_0.geometry}
-          material={materials.silver}
-        />
-        <mesh
-          geometry={nodes.bumper_front004_1.geometry}
-          material={materials.lights}
-        />
-        <mesh
-          geometry={nodes.bumper_front004_2.geometry}
-          material={materials.plastic}
-        />
-        <mesh
-          geometry={nodes.bumper_front007_0.geometry}
-          material={materials.glass}
-          rotation={[-0.01, 0, 0]}
-          scale={1.04}
-        />
-        <mesh
-          geometry={nodes.bumper_front009_0.geometry}
-          material={materials.tex_shiny}
-        />
-        <mesh
-          geometry={nodes.bumper_front001_0.geometry}
-          material={materials.plastic}
-        />
-        <mesh
-          geometry={nodes.bumper_front001_1.geometry}
-          material={materials.silver}
-        />
-        <mesh
-          geometry={nodes.bumper_front001_2.geometry}
-          material={materials.lights}
-        />
-        <mesh
-          geometry={nodes.bumper_front003_0.geometry}
-          material={materials.plastic}
-        />
-        <mesh
-          geometry={nodes.bumper_front003_1.geometry}
-          material={materials.glass}
-        />
-        <mesh geometry={nodes.boot001_0.geometry} material={materials.paint} />
-        <mesh geometry={nodes.boot002_0.geometry} material={materials.paint} />
-        <mesh
-          geometry={nodes.Plane001_0.geometry}
-          material={materials.tex_shiny}
-          position={[0.01, 3.58, 0.11]}
-        />
-        <mesh
-          geometry={nodes.boot003_0.geometry}
-          material={materials.tex_shiny}
-        />
-        <mesh geometry={nodes.boot004_0.geometry} material={materials.window} />
-        <mesh geometry={nodes.boot005_0.geometry} material={materials.paint} />
-        <mesh
-          geometry={nodes.boot006_0.geometry}
-          material={materials.full_black}
-        />
-        <mesh
-          geometry={nodes.window_rear001_0.geometry}
-          material={materials.full_black}
-        />
-        <mesh geometry={nodes.boot007_0.geometry} material={materials.logo} />
-        <mesh
-          geometry={nodes.Plane005_0.geometry}
-          material={materials.license}
-          position={[0, 3.7, -0.29]}
-          rotation={[0.11, 0, 0]}
-          scale={[0.39, 0.39, 0.36]}
-        />
-        <mesh
-          geometry={nodes.Plane006_0.geometry}
-          material={materials.license}
-          position={[0, -3.75, -0.43]}
-          rotation={[0.08, 0, Math.PI]}
-          scale={[0.4, 0.4, 0.36]}
-        />
-        <mesh geometry={nodes.boot008_0.geometry} material={materials.paint} />
-        <mesh geometry={nodes.boot009_0.geometry} material={materials.silver} />
-        <mesh
-          geometry={nodes.boot010_0.geometry}
-          material={materials.plastic}
-        />
-        <mesh geometry={nodes.boot011_0.geometry} material={materials.coat} />
-        <mesh geometry={nodes.boot011_0_1.geometry} material={materials.coat} />
-        <mesh
-          geometry={nodes.Cube002_0.geometry}
-          material={materials.full_black}
-          scale={[0.33, 0.32, 0.32]}
-        />
+    <group {...props} dispose={null} scale={2}>
+      <group>
+        <mesh geometry={nodes.Object_6.geometry} material={materials.CarPaint} material-color={'green'}/>
+        <mesh geometry={nodes.Object_9.geometry} material={materials.Chrome} />
+        <mesh geometry={nodes.Object_12.geometry} material={materials.Plastic} />
+        <mesh geometry={nodes.Object_15.geometry} material={materials.PlasticDkGlossy} />
+        <mesh geometry={nodes.Object_18.geometry} material={materials.GlassTextured} />
+        <mesh geometry={nodes.Object_21.geometry} material={materials.Rubber} />
+        <mesh geometry={nodes.Object_24.geometry} material={materials.ChromeLogo} />
+        <mesh geometry={nodes.Object_27.geometry} material={materials.LicPlate} />
+        <mesh geometry={nodes.Object_30.geometry} material={materials.Exhaust} />
+        <mesh geometry={nodes.Object_33.geometry} material={materials.WheelAluminumRim} />
+        <mesh geometry={nodes.Object_36.geometry} material={materials.WheelLogo} />
+        <mesh geometry={nodes.Object_39.geometry} material={materials.WheelMetal} />
+        <mesh geometry={nodes.Object_42.geometry} material={materials.WheelTireBump} />
+        <mesh geometry={nodes.Object_45.geometry} material={materials.WheelBrakeDisk} />
+        <mesh geometry={nodes.Object_48.geometry} material={materials.WheelPaint} />
+        <mesh geometry={nodes.Object_51.geometry} material={materials.WheelBrakeCaliper} />
+        <mesh geometry={nodes.Object_54.geometry} material={materials.Plastic} />
+        <mesh geometry={nodes.Object_57.geometry} material={materials.WheelAluminumRim} />
+        <mesh geometry={nodes.Object_60.geometry} material={materials.WheelLogo} />
+        <mesh geometry={nodes.Object_63.geometry} material={materials.WheelMetal} />
+        <mesh geometry={nodes.Object_66.geometry} material={materials.WheelTireBump} />
+        <mesh geometry={nodes.Object_69.geometry} material={materials.WheelBrakeDisk} />
+        <mesh geometry={nodes.Object_72.geometry} material={materials.WheelPaint} />
+        <mesh geometry={nodes.Object_75.geometry} material={materials.WheelBrakeCaliper} />
+        <mesh geometry={nodes.Object_78.geometry} material={materials.WheelAluminumRim} />
+        <mesh geometry={nodes.Object_81.geometry} material={materials.WheelLogo} />
+        <mesh geometry={nodes.Object_84.geometry} material={materials.WheelMetal} />
+        <mesh geometry={nodes.Object_87.geometry} material={materials.WheelTireBump} />
+        <mesh geometry={nodes.Object_90.geometry} material={materials.WheelBrakeDisk} />
+        <mesh geometry={nodes.Object_93.geometry} material={materials.WheelPaint} />
+        <mesh geometry={nodes.Object_96.geometry} material={materials.WheelBrakeCaliper} />
+        <mesh geometry={nodes.Object_99.geometry} material={materials.WheelAluminumRim} />
+        <mesh geometry={nodes.Object_102.geometry} material={materials.WheelLogo} />
+        <mesh geometry={nodes.Object_105.geometry} material={materials.WheelMetal} />
+        <mesh geometry={nodes.Object_108.geometry} material={materials.WheelTireBump} />
+        <mesh geometry={nodes.Object_111.geometry} material={materials.WheelBrakeDisk} />
+        <mesh geometry={nodes.Object_114.geometry} material={materials.WheelPaint} />
+        <mesh geometry={nodes.Object_117.geometry} material={materials.WheelBrakeCaliper} />
+        <mesh geometry={nodes.Object_120.geometry} material={materials.Plastic} />
+        <mesh geometry={nodes.Object_123.geometry} material={materials.GlassLights} />
+        <mesh geometry={nodes.Object_126.geometry} material={materials.intLeatherLt} />
+        <mesh geometry={nodes.Object_129.geometry} material={materials.intLeatherDk} />
+        <mesh geometry={nodes.Object_132.geometry} material={materials.intTexGlossyButtons} />
+        <mesh geometry={nodes.Object_135.geometry} material={materials.intTexChromeButtons} />
+        <mesh geometry={nodes.Object_138.geometry} material={materials.intLeatherBrown} />
+        <mesh geometry={nodes.Object_141.geometry} material={materials.intCarpet} />
+        <mesh geometry={nodes.Object_144.geometry} material={materials.intBelts} />
+        <mesh geometry={nodes.Object_147.geometry} material={materials.intAluminum} />
+        <mesh geometry={nodes.Object_150.geometry} material={materials.Plastic} />
+        <mesh geometry={nodes.Object_153.geometry} material={materials.GlassLights} />
+        <mesh geometry={nodes.Object_156.geometry} material={materials.intLeatherDk} />
+        <mesh geometry={nodes.Object_159.geometry} material={materials.PlasticOrange} />
+        <mesh geometry={nodes.Object_162.geometry} material={materials.intTexGlossyButtons} />
+        <mesh geometry={nodes.Object_165.geometry} material={materials.intTexChromeButtons} />
+        <mesh geometry={nodes.Object_168.geometry} material={materials.intLeatherBrown} />
+        <mesh geometry={nodes.Object_171.geometry} material={materials.intWoodInserts} />
+        <mesh geometry={nodes.Object_174.geometry} material={materials.intBrassMet} />
+        <mesh geometry={nodes.Object_177.geometry} material={materials.intAluminum} />
+        <mesh geometry={nodes.Object_180.geometry} material={materials.CarPaint} />
+        <mesh geometry={nodes.Object_183.geometry} material={materials.Chrome} />
+        <mesh geometry={nodes.Object_186.geometry} material={materials.intLeatherLt} />
+        <mesh geometry={nodes.Object_189.geometry} material={materials.intLeatherDk} />
+        <mesh geometry={nodes.Object_192.geometry} material={materials.intTexGlossyButtons} />
+        <mesh geometry={nodes.Object_195.geometry} material={materials.intLeatherBrown} />
+        <mesh geometry={nodes.Object_198.geometry} material={materials.intLeatherChecker} />
+        <mesh geometry={nodes.Object_201.geometry} material={materials.intPlasticRed} />
+        <mesh geometry={nodes.Object_204.geometry} material={materials.ChromeLogo} />
+        <mesh geometry={nodes.Object_207.geometry} material={materials.LicPlate} />
+        <mesh geometry={nodes.Object_210.geometry} material={materials.intLeatherLt} />
+        <mesh geometry={nodes.Object_213.geometry} material={materials.intTexChromeButtons} />
+        <mesh geometry={nodes.Object_216.geometry} material={materials.intLeatherBrown} />
+        <mesh geometry={nodes.Object_219.geometry} material={materials.intBrassMet} />
+        <mesh geometry={nodes.Object_222.geometry} material={materials.intAluminum} />
+        <mesh geometry={nodes.Object_225.geometry} material={materials.Chrome} />
+        <mesh geometry={nodes.Object_228.geometry} material={materials.GlassLights} />
+        <mesh geometry={nodes.Object_231.geometry} material={materials.LightsBumpGlass} />
+        <mesh geometry={nodes.Object_234.geometry} material={materials.LightsLed} />
+        <mesh geometry={nodes.Object_237.geometry} material={materials.LightsLens} />
+        <mesh geometry={nodes.Object_240.geometry} material={materials.LightsChromeBMP} />
+        <mesh geometry={nodes.Object_243.geometry} material={materials.Chrome} />
+        <mesh geometry={nodes.Object_246.geometry} material={materials.GlassLights} />
+        <mesh geometry={nodes.Object_249.geometry} material={materials.LightsBumpGlass} />
+        <mesh geometry={nodes.Object_252.geometry} material={materials.GlassRedLights} />
+        <mesh geometry={nodes.Object_255.geometry} material={materials.LightsChromeBMP} />
+        <mesh geometry={nodes.Object_258.geometry} material={materials.CarPaint} />
+        <mesh geometry={nodes.Object_261.geometry} material={materials.Chrome} />
+        <mesh geometry={nodes.Object_264.geometry} material={materials.GlassTextured} />
+        <mesh geometry={nodes.Object_267.geometry} material={materials.Rubber} />
+        <mesh geometry={nodes.Object_270.geometry} material={materials.intLeatherDk} />
+        <mesh geometry={nodes.Object_273.geometry} material={materials.intTexGlossyButtons} />
+        <mesh geometry={nodes.Object_276.geometry} material={materials.intTexChromeButtons} />
+        <mesh geometry={nodes.Object_279.geometry} material={materials.intLeatherBrown} />
+        <mesh geometry={nodes.Object_282.geometry} material={materials.intWoodInserts} />
+        <mesh geometry={nodes.Object_285.geometry} material={materials.intAluminum} />
+        <mesh geometry={nodes.Object_288.geometry} material={materials.CarPaint} />
+        <mesh geometry={nodes.Object_291.geometry} material={materials.Chrome} />
+        <mesh geometry={nodes.Object_294.geometry} material={materials.GlassTextured} />
+        <mesh geometry={nodes.Object_297.geometry} material={materials.Rubber} />
+        <mesh geometry={nodes.Object_300.geometry} material={materials.intLeatherDk} />
+        <mesh geometry={nodes.Object_303.geometry} material={materials.intTexGlossyButtons} />
+        <mesh geometry={nodes.Object_306.geometry} material={materials.intTexChromeButtons} />
+        <mesh geometry={nodes.Object_309.geometry} material={materials.intLeatherBrown} />
+        <mesh geometry={nodes.Object_312.geometry} material={materials.intWoodInserts} />
+        <mesh geometry={nodes.Object_315.geometry} material={materials.intAluminum} />
       </group>
     </group>
-  );
+  )
 }

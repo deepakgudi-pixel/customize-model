@@ -1,11 +1,11 @@
 Model Information:
-* title:	(FREE) Porsche 911 Carrera 4S
-* source:	https://sketchfab.com/3d-models/free-porsche-911-carrera-4s-d01b254483794de3819786d93e0e1ebf
-* author:	Karol Miklas (https://sketchfab.com/karolmiklas)
+* title:	Bentley Car
+* source:	https://sketchfab.com/3d-models/bentley-car-0a6acbe0724b4fd0901b5a42c19c8952
+* author:	pepetrincado (https://sketchfab.com/pepetrincado)
 
 Model License:
-* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
-* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "(FREE) Porsche 911 Carrera 4S" (https://sketchfab.com/3d-models/free-porsche-911-carrera-4s-d01b254483794de3819786d93e0e1ebf) by Karol Miklas (https://sketchfab.com/karolmiklas) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+This work is based on "Bentley Car" (https://sketchfab.com/3d-models/bentley-car-0a6acbe0724b4fd0901b5a42c19c8952) by pepetrincado (https://sketchfab.com/pepetrincado) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -11,14 +11,14 @@ export default function App() {
         <Canvas>
           <Suspense fallback={null}>
             <ambientLight />
-            <spotLight
-              position={[10, 60, 10]}
-              angle={0.1}
-              penumbra={0.1}
-              intensity={2.0}
-              castShadow
-            />
             <Model />
+            <spotLight
+                  position={[10, 40, 10]}
+                  angle={0.1}
+                  penumbra={0.1}
+                  intensity={2}
+                  castShadow
+                />
             <OrbitControls
               enablePan={false}
               enableZoom={false}

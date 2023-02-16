@@ -13,7 +13,14 @@
     .car-canvas{
         height: 100vh;
         width:  65vw;
+        cursor: grab;
     }
 
+    .car-canvas:active{
+        cursor: grabbing;
+    }
+
+
 }
+
 
